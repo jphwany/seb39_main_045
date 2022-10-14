@@ -2,17 +2,15 @@ package com.cactusvilleage.server.auth.web.dto.request;
 
 import com.cactusvilleage.server.auth.validator.PrePasswordRequired;
 import com.cactusvilleage.server.auth.validator.UsernameNotDuplicate;
-import lombok.AccessLevel;
+import lombok.*;
 import com.cactusvilleage.server.auth.validator.SpaceCantBeAtBeginOrEnd;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 import org.springframework.lang.Nullable;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 @Getter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class EditDto {

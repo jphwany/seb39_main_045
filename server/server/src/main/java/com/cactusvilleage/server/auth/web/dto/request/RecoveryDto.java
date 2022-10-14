@@ -1,12 +1,10 @@
 package com.cactusvilleage.server.auth.web.dto.request;
 
-import lombok.AccessLevel;
+import lombok.*;
 import com.cactusvilleage.server.auth.validator.EmailForm;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Getter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class RecoveryDto {

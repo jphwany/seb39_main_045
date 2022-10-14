@@ -5,10 +5,7 @@ import com.cactusvilleage.server.auth.validator.EmailForm;
 import com.cactusvilleage.server.auth.validator.EmailNotDuplicate;
 import com.cactusvilleage.server.auth.validator.SpaceCantBeAtBeginOrEnd;
 import com.cactusvilleage.server.auth.validator.UsernameNotDuplicate;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.validation.constraints.NotBlank;
@@ -18,6 +15,7 @@ import static com.cactusvilleage.server.auth.entities.Authority.ROLE_USER;
 import static com.cactusvilleage.server.auth.entities.oauth.ProviderType.CACTUS;
 
 @Getter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class PlainSignupDto {
